@@ -33,10 +33,12 @@ After reviewing the above information, the election commision has requested for 
     -  Denver county has the largest number of votes.
     
     We are using a conditional statement to check the largest turnout county, going through all the records (using for loop)
-    > Code:
-    >    if (c_votes > largestturnout_votes):
-    >       largestturnout_county = c_name
-    >        largestturnout_votes = c_votes
+    
+    Code:
+        
+        `if (c_votes > largestturnout_votes):   
+           largestturnout_county = c_name
+            largestturnout_votes = c_votes`
     
 
 4. Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
@@ -47,10 +49,12 @@ After reviewing the above information, the election commision has requested for 
         * Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes.
         
     - We are using below code to collect the candidates name from election_results.csv file by looping over all the rows and adding a candidate name to the list if the name is not on it.
+        
         Code:
-            if candidate_name not in candidate_options:
+        
+            `if candidate_name not in candidate_options:
                 # Add the candidate name to the candidate list.
-                candidate_options.append(candidate_name)        
+                candidate_options.append(candidate_name)`        
         
 5. Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
     - Winner of the congressional election is Diana DeGette, with 272,892 votes, that is 73.8% of the total votes.
