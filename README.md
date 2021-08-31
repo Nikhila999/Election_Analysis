@@ -29,6 +29,7 @@ After reviewing the above information, the election commision has requested for 
         * Denver county has received 306,055 votes, 82.8% of the total votes.
         * Arapahoe county has received 24,801 votes, 6.7% of the toal votes.
     - To calculate the number and percentage of votes by county, we use below code.
+    
     Code:      
     
           `for c_name in county_names:
@@ -39,6 +40,7 @@ After reviewing the above information, the election commision has requested for 
 3. Which county had the largest number of votes?
     -  Denver county has the largest number of votes.
     - We are using a conditional statement to check the largest turnout county, going through all the records (using for loop)
+    
     Code:
         
           `if (c_votes > largestturnout_votes):   
@@ -52,6 +54,7 @@ After reviewing the above information, the election commision has requested for 
         * Diana DeGette received 73.8% of the vote and 272,892 number of votes.
         * Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes.
     - We are using below code to collect the candidates name from election_results.csv file by looping over all the rows and adding a candidate name to the list if the name is not on it.
+    
     Code:
     
             `if candidate_name not in candidate_options:
@@ -61,6 +64,7 @@ After reviewing the above information, the election commision has requested for 
 5. Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
     - Winner of the congressional election is Diana DeGette, with 272,892 votes, that is 73.8% of the total votes.
     - We are using a conditional statement to check the highest number of votes and percentages for a candidate going through all the records (using for loop) 
+    
     Code:
     
             `if (votes > winning_count) and (vote_percentage > winning_percentage):
@@ -69,8 +73,6 @@ After reviewing the above information, the election commision has requested for 
                 winning_percentage = vote_percentage`
 
 ## Election-Audit Summary
-- provide proposal to election commision on how to use this script with some modifications for any election.
-- give atleast 2 examples to modify script to use in other elections
 
 The election-audit python code we built can be used for auditing any election with few minor changes.
 1. Adding type of election (like general election, municipal election) column to the dataset would give our code the ability to expand into various types of elections. 
